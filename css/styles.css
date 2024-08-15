@@ -83,6 +83,7 @@ header img {
 #header-name {
     color: #ff6924;
 }
+
 main,
 footer,
 #contact {
@@ -189,8 +190,8 @@ footer ul li:first-child {
     background-color: transparent;
   }
   header img {
-    float: right;
-    margin-left: 1em;
+    display: flex;
+    margin-top: 2rem;
     width: 30%; 
   } 
 
@@ -203,6 +204,22 @@ footer ul li:first-child {
   a:hover {
     color: #ff6924;
     text-decoration: none;
+  }
+
+  #aboutme {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  #aboutme p{
+    order: 1;
+    text-align: left;
+    padding-top: 2rem;
+  }
+
+  #aboutme img{
+    order: 2;
+    width: 40%;
   }
 
 #portfolio {
@@ -288,10 +305,17 @@ footer ul li:first-child {
     margin: 0 auto;
   }
 
+  header p {
+    order: 1;
+    flex: 1;
+    text-align: left;
+    padding: 1rem 2rem;
+  }
+
   header img {
-    float: right;
-    margin-left: 1em;
-    width: 30%; 
+    order: 2;
+    width: 40%; 
+    margin: auto;
   } 
 
   #portfolio {
